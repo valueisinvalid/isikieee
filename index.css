@@ -4,6 +4,7 @@
 :root {
     --main-color: #4282e8a2;
     --black-color: #0e0e0e;
+    --background: #e7e6e6;
     --border: 0.1rem solid rgba(255, 255, 255, 0.4);
   }
   
@@ -44,21 +45,21 @@
   }
   
   body {
-    background-color: #ffffff;
+    background-color: var(--background);
     overflow-x: hidden;
-    background-image: url(pictures/logo/isikieeewebbackground.png);
+    /*background-image: url(pictures/logo/isikieeewebbackground.png);
     /*background-repeat: no-repeat;*/
     background-size: contain;
   }
 .header {
-    background-color: #fff;
+    background-color: inherit;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 7%;
     /*margin: 2rem 7%;
     border-radius: 30rem;*/
-    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    /*box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.75);*/
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -66,7 +67,8 @@
     width: 100%;
   }
   .header .navbar a {
-    margin: 0 1rem;
+    font-family: "Overpass Mono";
+    margin: 0 3rem;
     font-size: 1.6rem;
     color: var(--black-color);
     border-bottom: 0.1rem solid transparent;
@@ -77,38 +79,35 @@
     padding-bottom: 0.5rem;
   }
   .header .logo img {
-    height: 7rem;
+    height: 6rem;
+    margin-left: -5rem;
+
   }
   .header #menu-btn {
     display: none;
   }
   .btn {
-    background: #ffffff;
-    background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
-    background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
-    background-image: -ms-linear-gradient(top, #ffffff, #ffffff);
-    background-image: -o-linear-gradient(top, #ffffff, #ffffff);
-    background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+    background: #263179;
+    
     -webkit-border-radius: 30;
     -moz-border-radius: 30;
     border-radius: 30px;
-    font-family: Georgia;
-    color: #000000;
-    font-size: 26px;
-    padding: 15px 20px 15px 20px;
+    box-shadow: 0px 0px 7px 0px #c6c6c6;
+    
+    border: 1px solid #0e0e0e;
+    font-family: Overpass Mono;
+    color: #ffff;
+    font-size: 19px;
+    padding: 18px 35px;
     text-decoration: none;
     cursor: pointer;
     margin-right: 8rem;
-    margin-left: 8rem;
+    margin-left: 15rem;
   }
   .btn:hover {
     opacity: 0.9;
-    background: #000000;
-    background-image: -webkit-linear-gradient(top, #000000, #000000);
-    background-image: -moz-linear-gradient(top, #000000, #000000);
-    background-image: -ms-linear-gradient(top, #000000, #000000);
-    background-image: -o-linear-gradient(top, #000000, #000000);
-    background-image: linear-gradient(to bottom, #000000, #000000);
+    background:#3d4cac;
+    
     text-decoration: none;
     color: #ffffff81;
   }
@@ -121,31 +120,48 @@
     color: var(--black-color);
   }
   .arrowdiv{
-    margin-right: 2%;
-    /*text-align: right;*/
     width: 40%;
     height: 30%;
     position: relative;
-    margin-left: auto;
+    margin-left: 115rem;
+    margin-top: -38rem;
   }
   .arrow{
+    
     height: 15%;
-    width: 15%;
+    width: 20%;
     display: block;
+    margin-left: 7rem;
+    margin-bottom: 3rem;
+    transform: rotate(-15deg);
+    transform-origin: top;
+  }
+  .sendebize{
+    font-size: 3.4rem;
+    font-family: "Vujahday Script";
+    display: block;
+    margin-bottom: 7rem;
+    margin-left: -8rem;
+    transform: rotate(-15deg);
+    transform-origin: top;
+
+
   }
   .combar {
-    background-color: #fff;
+    background-color: #e7e6e6;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /*padding: 0 7%;*/
-    margin: 2rem 12%;
+    padding: 0px 6%;
+    margin: auto;
+    
     border-radius: 30rem;
-    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.75);
     top: 0;
-    margin-right: 7%;
-    width: 76%;
-    margin-top: 15%;
+    
+    width: 90%;
+    
+    margin-top: 16%;
   }
   .container {
     display: flex;                   /*hakkında kısmı için*/
@@ -168,11 +184,11 @@
   }
   
   .heading {
-    color: #fff;
+    color: #e7e6e6;
     text-transform: uppercase;
     font-size: 4rem;
     margin-bottom: 3.5rem;
-    border-bottom: 0.1rem solid #fff;
+    border-bottom: 0.1rem solid #e7e6e6;
   }
   /*.sc1{
     min-height: 100vh;
@@ -186,6 +202,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
     }
    .img1{
 
@@ -197,13 +214,36 @@
     
     }
     .h11{
-      color: #210000;
-      font-family: 'Karla', sans-serif;
-      font-size: 9rem;
+      color: #263179;
+      font-family: 'Overpass Mono', sans-serif;
+      font-weight: 400;
+      font-size: 6rem;
       /*text-align: center;*/
       margin-left: 7%;
-      margin-top: 10%;
+      margin-top: 15%;
       width: 50%;
+    }
+
+    .h12{
+      color: #210000;
+      font-family: 'Handjet', sans-serif;
+      font-weight: 300;
+      font-size: 5rem;
+      /*text-align: center;*/
+      margin-left: 7%;
+      
+      width: 50%;
+    }
+
+    .poop{
+      color: #000000;
+      font-family: 'Overpass Mono', sans-serif;
+      font-weight: 300;
+      font-size: 1.5rem;
+      /*text-align: center;*/
+      margin-left: 7%;
+      margin-top: 2%;
+      width: 40%;
     }
     .heading {
       color: #a20000;
@@ -286,7 +326,7 @@
         margin-top: 20%;
       }
     
-      
+      /*ayarla arrowdiv*/
     }
     
     @media (max-width: 768px) {
@@ -295,6 +335,7 @@
       }
     
       .header .navbar {
+        
         position: absolute;
         top: 95%;
         background-color: #fff;

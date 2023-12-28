@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IŞIK IEEE</title>
+    
     <link rel="stylesheet" href="index.css">
     <link rel="SHORTCUT ICON" href="pictures/logo/ulogo.ico" type="image/x-icon" >
     <link
@@ -16,6 +17,10 @@
     />
 </head>
 <body>
+
+  
+
+
     <header class="header">
         <a href="#" class="logo">
           <img src="pictures/logo/logo2.png" alt="logo" />
@@ -35,7 +40,14 @@
       <h1 class="h11" id="ana">
         IŞIK IEEE 
       </h1>
+      <h3 class="h12" id="ana" data-value="Her şey şimdi başlıyor">
+        Her şey şimdi başlıyor
+      </h3>
+      <p class="poop" id="ana">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales vehicula sagittis. Aenean ac lorem quis mauris faucibus cursus. Integer ac lacus eu sapien egestas condimentum. Curabitur sapien leo, euismod id malesuada vitae, congue sit amet risus. Duis eros nulla, congue non imperdiet eget, varius vel ligula.
+      </p>
       <div class="arrowdiv">
+        <span class = "sendebize">Sen de bize katıl!</span>
         <img src="pictures/iconlar/arrow.png" class="arrow">
         <button class="btn"> Bize Ulaşın  </button>
       </div>
@@ -185,6 +197,29 @@
                   </section>
                   <script src="script.js"></script>
             
-    
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const letters = "abcçdefgğhıijklmnoöprsştuüvyz";
+                        document.querySelector(".h12").innerText = document.querySelector(".h12").innerText.trim();
+                        let repetition = 0;
+                        const interval = setInterval(() => {
+                            document.querySelector(".h12").innerText = document.querySelector(".h12").innerText
+                                .split("")
+                                .map((letter, index) => {
+                                    if (index < repetition) {
+                                        return document.querySelector(".h12").dataset.value[index];
+                                    }
+                                    return letters[Math.floor(Math.random() * 29)];
+                                })
+                                .join("");
+                
+                            if (repetition >= document.querySelector(".h12").dataset.value.length)
+                                clearInterval(interval);
+                
+                            repetition += 1 / 3;
+                        }, 30);
+                    });
+                </script>
+                
 </body>
 </html>
