@@ -181,6 +181,8 @@
     margin: 5%;
     border-radius: 30px;
     overflow: hidden; /* Clear the float */
+    
+    
   }
 
   .hakkindayazi {
@@ -189,6 +191,7 @@
       font-weight: 300;
       font-size: 1.5rem;
       margin-top: 20px;
+      overflow: hidden;
       /*text-align: center;*/
       
 
@@ -222,10 +225,11 @@
     width: 60%; 
     height: 50%;
     float: right; 
-    margin-left: 2%; 
+    /*margin-left: 2%; */
     margin-top: 4rem;
     display: block;
-    
+    float: right; /* or float: right; */
+    margin-right: 20px; 
   }
   
   
