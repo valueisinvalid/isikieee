@@ -22,9 +22,7 @@
     border: none;
     text-decoration: none;
     transition: 0.2s ease;
-    -webkit-user-select: none;
-    -ms-user-select: none; 
-    user-select: none;
+    
   }
   
   /*! base html codes  */
