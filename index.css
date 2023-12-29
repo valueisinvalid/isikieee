@@ -50,9 +50,20 @@
   body {
     background-color: var(--background);
     overflow-x: hidden;
-    /*background-image: url(pictures/logo/isikieeewebbackground.png);
+    
+  }
+
+  .backgroundimage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(pictures/backgro.jpg);
+    opacity: 0.1;
     /*background-repeat: no-repeat;*/
     background-size: contain;
+
   }
 .header {
     background-color: inherit;
@@ -67,6 +78,7 @@
     top: 0;
     z-index: 1000;
     margin-right: 7%;
+    /*margin-top: 0.5%;*/
     width: 100%;
   }
   .header .navbar a {
@@ -75,6 +87,7 @@
     font-size: 1.6rem;
     color: var(--black-color);
     border-bottom: 0.1rem solid transparent;
+    
   }
   .header .navbar .active,
   .header .navbar a:hover {
@@ -165,7 +178,27 @@
     width: 90%;
     
     margin-top: 16%;
+
+
+    
+    animation: fadeInUp 1s ease-in-out;
+    opacity: 0; 
+
+    
+    animation-fill-mode: forwards;
   }
+
+  @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Y ekseni boyunca 20px yukarı hareket */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Normal konumuna dönme */
+    }
+}
+
   .container {
     display: flex;                   /*hakkında kısmı için*/
   }
@@ -255,7 +288,24 @@
     justify-content: space-around;
     align-items: center;
     
+    
+    animation: fadeInUp2 1s ease-in-out;
+    opacity: 0; 
+
+    
+    animation-fill-mode: forwards;
     }
+
+    @keyframes fadeInUp2 {
+      from {
+          opacity: 0;
+          transform: translateY(15px); 
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0); 
+      }
+  }
    .img1{
 
     width: 9%;
