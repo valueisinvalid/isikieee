@@ -293,14 +293,14 @@
       width: 40%;
     }
     .heading {
-      color: #a20000;
-      font-size: 5rem;
-      margin-bottom: 3.5rem;
-      border-bottom: 0.1rem solid #3d0000;
-      margin-right: 8%;
-      margin-left: 8%;
-      margin-top: 5rem;
-      font-family: 'Karla', sans-serif;
+      color: #263179;
+      font-family: 'Overpass Mono', sans-serif;
+      font-weight: 400;
+      font-size: 4rem;
+      /*text-align: center;*/
+      margin-left: 7%;
+      margin-top: 15%;
+      width: 50%;
       
     }
     .sss p{
