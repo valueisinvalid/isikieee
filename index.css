@@ -63,6 +63,7 @@
     opacity: 0.1;
     /*background-repeat: no-repeat;*/
     background-size: contain;
+    z-index: -1;
 
   }
 .header {
@@ -339,6 +340,11 @@
       
       width: 50%;
     }
+    .h12 span {
+      border-left: 1px solid transparent;
+      display: inline-block;
+      margin-right: 2px; /* Harfler arasındaki boşluğu ayarlamak için */
+  }
 
     .poop{
       color: #000000;

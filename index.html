@@ -17,6 +17,7 @@
     />
 </head>
 <body>
+  <script src="script.js"></script>  
 
   <div class="backgroundimage"></div>
 
@@ -250,74 +251,6 @@
                     </div>
                     <p>Bütün Hakları Saklıdır. | © 2023 IŞIK IEEE</p>
                   </section>
-                  <script src="script.js"></script>
-            
-                  <style>
-                    .h12 span {
-                        border-left: 1px solid transparent;
-                        display: inline-block;
-                        margin-right: 2px; /* Harfler arasındaki boşluğu ayarlamak için */
-                    }
-                </style>
-                
-                <script>
-                  document.addEventListener("DOMContentLoaded", function() {
-                      const letters = "abcçdefgğhıijklmnoöprsştuüvyz";
-                      const targetElement = document.querySelector(".h12");
-                      const originalText = targetElement.innerText.trim();
-                      let repetition = 0;
-                      const interval = setInterval(() => {
-                          targetElement.innerText = originalText
-                              .split("")
-                              .map((char, index) => {
-                                  if (char.trim() === "") {
-                                      return char; 
-                                  }
-                                  if (index < repetition) {
-                                      return targetElement.dataset.value[index];
-                                  }
-                                  return letters[Math.floor(Math.random() * 29)];
-                              })
-                              .join("");
-              
-                          if (repetition >= targetElement.dataset.value.length) {
-                              clearInterval(interval);
-                          }
-              
-                          repetition += 1 ;
-                      }, 30);
-                  });
-              </script>
-              
-              <script>
-                document.addEventListener("DOMContentLoaded", function() {
-                    const letters = "ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ";
-                    const targetElement = document.querySelector(".h11");
-                    const originalText = targetElement.innerText.trim();
-                    let repetition = 0;
-                    const interval = setInterval(() => {
-                        targetElement.innerText = originalText
-                            .split("")
-                            .map((char, index) => {
-                                if (char.trim() === "") {
-                                    return char; 
-                                }
-                                if (index < repetition) {
-                                    return targetElement.dataset.value[index];
-                                }
-                                return letters[Math.floor(Math.random() * 29)];
-                            })
-                            .join("");
-            
-                        if (repetition >= targetElement.dataset.value.length) {
-                            clearInterval(interval);
-                        }
-            
-                        repetition += 1 / 3;
-                    }, 30);
-                });
-            </script> 
-                
-                
+                       
 </body>
 </html>

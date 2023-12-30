@@ -25,3 +25,59 @@ menuBtn.addEventListener("click", function () {
     modal.style.display = "none";
   }
   // resim bölüümü
+  //-------------------
+  //Her şey başlıyor animasyon
+  document.addEventListener("DOMContentLoaded", function() {
+    const letters = "abcçdefgğhıijklmnoöprsştuüvyz";
+    const targetElement = document.querySelector(".h12");
+    const originalText = targetElement.innerText.trim();
+    let repetition = 0;
+    const interval = setInterval(() => {
+        targetElement.innerText = originalText
+            .split("")
+            .map((char, index) => {
+                if (char.trim() === "") {
+                    return char; 
+                }
+                if (index < repetition) {
+                    return targetElement.dataset.value[index];
+                }
+                return letters[Math.floor(Math.random() * 29)];
+            })
+            .join("");
+
+        if (repetition >= targetElement.dataset.value.length) {
+            clearInterval(interval);
+        }
+
+        repetition += 1 ;
+    }, 30);
+});
+//------
+//Işık Ieee Animasyon
+document.addEventListener("DOMContentLoaded", function() {
+  const letters = "ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ";
+  const targetElement = document.querySelector(".h11");
+  const originalText = targetElement.innerText.trim();
+  let repetition = 0;
+  const interval = setInterval(() => {
+      targetElement.innerText = originalText
+          .split("")
+          .map((char, index) => {
+              if (char.trim() === "") {
+                  return char; 
+              }
+              if (index < repetition) {
+                  return targetElement.dataset.value[index];
+              }
+              return letters[Math.floor(Math.random() * 29)];
+          })
+          .join("");
+
+      if (repetition >= targetElement.dataset.value.length) {
+          clearInterval(interval);
+      }
+
+      repetition += 1 / 3;
+  }, 30);
+});
