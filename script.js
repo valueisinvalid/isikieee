@@ -29,7 +29,7 @@ menuBtn.addEventListener("click", function () {
   //Her şey başlıyor animasyon
   document.addEventListener("DOMContentLoaded", function() {
     const letters = "abcçdefgğhıijklmnoöprsştuüvyz";
-    const targetElement = document.querySelector(".h12");
+    const targetElement = document.getElementById("anabaslik2");
     const originalText = targetElement.innerText.trim();
     let repetition = 0;
     const interval = setInterval(() => {
@@ -57,7 +57,7 @@ menuBtn.addEventListener("click", function () {
 //Işık Ieee Animasyon
 document.addEventListener("DOMContentLoaded", function() {
   const letters = "ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ";
-  const targetElement = document.querySelector(".h11");
+  const targetElement = document.getElementById("anabaslik1")
   const originalText = targetElement.innerText.trim();
   let repetition = 0;
   const interval = setInterval(() => {
