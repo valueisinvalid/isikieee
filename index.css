@@ -78,7 +78,7 @@
     top: 0;
     z-index: 1000;
     margin-right: 7%;
-    /*margin-top: 0.5%;*/
+    padding-top: 1%;
     width: 100%;
   }
   .header .navbar a {
