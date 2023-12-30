@@ -95,6 +95,38 @@ body {
   height: 6rem;
   margin-left: -5rem;
 }
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--background);
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+}
+
+.nav-links .dropdown-content a {
+  padding: 10px;
+}
+
+.nav-links .dropdown-content a:hover {
+  background-color: #ffffffbf;
+}
 .header #menu-btn {
   display: none;
 }
@@ -441,6 +473,10 @@ p {
     margin: 1.5rem;
     padding: 0.5rem;
     font-size: 2rem;
+  }
+  .nav-links{
+    list-style: none;
+    display: block;
   }
   /*iframe{
         width: 70%;
