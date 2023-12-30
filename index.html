@@ -38,7 +38,7 @@
         </button>
     </header>
     <section class="sc1">
-      <h1 class="h11" id="ana">
+      <h1 class="h11" id="ana" data-value="IŞIK IEEE">
         IŞIK IEEE 
       </h1>
       <h3 class="h12" id="ana" data-value="Her şey şimdi başlıyor">
@@ -284,12 +284,39 @@
                               clearInterval(interval);
                           }
               
-                          repetition += 1 / 3;
+                          repetition += 1 ;
                       }, 30);
                   });
               </script>
               
-                
+              <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const letters = "ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ";
+                    const targetElement = document.querySelector(".h11");
+                    const originalText = targetElement.innerText.trim();
+                    let repetition = 0;
+                    const interval = setInterval(() => {
+                        targetElement.innerText = originalText
+                            .split("")
+                            .map((char, index) => {
+                                if (char.trim() === "") {
+                                    return char; 
+                                }
+                                if (index < repetition) {
+                                    return targetElement.dataset.value[index];
+                                }
+                                return letters[Math.floor(Math.random() * 29)];
+                            })
+                            .join("");
+            
+                        if (repetition >= targetElement.dataset.value.length) {
+                            clearInterval(interval);
+                        }
+            
+                        repetition += 1 / 3;
+                    }, 30);
+                });
+            </script> 
                 
                 
 </body>
