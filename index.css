@@ -61,8 +61,18 @@ body {
   opacity: 0.1;
   /*background-repeat: no-repeat;*/
   background-size: contain;
+  z-index: -2;
+}
+
+.iletisimresim {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: auto;
   z-index: -1;
 }
+
 .header {
   background-color: inherit;
   display: flex;
@@ -105,7 +115,7 @@ body {
   position: absolute;
   background-color: var(--background);
   min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -267,6 +277,15 @@ body {
   /*text-align: center;*/
 }
 
+.hesaplarimiz {
+  color: #210000;
+  font-family: "Handjet", sans-serif;
+  font-weight: 300;
+  font-size: 3.5rem;
+  margin-left: 12.5rem;
+  margin-bottom: 20px;
+}
+
 .conimg {
   width: 60%;
   height: 50%;
@@ -350,6 +369,17 @@ body {
   margin-right: 2px; /* Harfler arasındaki boşluğu ayarlamak için */
 }
 
+.bizeulasin {
+  color: #263179;
+  font-family: "Overpass Mono", sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  /*text-align: center;*/
+  margin-left: 7%;
+  margin-top: 7%;
+  margin-bottom: 10px;
+  width: auto;
+}
 .poop {
   color: #000000;
   font-family: "Overpass Mono", sans-serif;
@@ -380,6 +410,8 @@ body {
   color: #2000007e;
   font-family: "Overpass Mono", sans-serif;
   font-weight: 300;
+  max-width: 600px;
+  margin-bottom: 15px;
 }
 iframe {
   margin-left: 9%;
@@ -387,6 +419,7 @@ iframe {
   width: 82%;
 }
 .footer {
+  margin-top: 9rem;
   background-color: #0e0e0e;
   text-align: center;
 }
@@ -417,8 +450,8 @@ p {
   margin-bottom: 2%;
 }
 .mail :hover {
-  color: rgb(255, 255, 255);
-  font-size: 3rem;
+  color: #263179;
+  font-size: 2rem;
 }
 /*--------------------------------------------------------------------------------------------*/
 @media (max-width: 991px) {
@@ -474,7 +507,7 @@ p {
     padding: 0.5rem;
     font-size: 2rem;
   }
-  .nav-links{
+  .nav-links {
     list-style: none;
     display: block;
   }

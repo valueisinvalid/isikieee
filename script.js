@@ -81,3 +81,6 @@ document.addEventListener("DOMContentLoaded", function() {
       repetition += 1 / 3;
   }, 30);
 });
+
+//KAR
+
