@@ -1,3 +1,8 @@
+fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('headerContent').innerHTML = data;
+    });
 const navbar = document.querySelector(".navbar");
 const menuBtn = document.querySelector("#menu-btn");
 menuBtn.addEventListener("click", function () {
