@@ -350,16 +350,19 @@ document.addEventListener("DOMContentLoaded", function() {
   }, 30);
 });
 
+//Header Yönlendirmesi
 fetch('/components/header.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('headerContent').innerHTML = data;
     });
+//Footer Yönlendirmesi
 fetch('/components/footer.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('footerContent').innerHTML = data;
     });
+
 const navbar = document.querySelector(".navbar");
 const menuBtn = document.querySelector("#menu-btn");
 menuBtn.addEventListener("click", function () {
