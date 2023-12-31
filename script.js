@@ -3,6 +3,11 @@ fetch('/components/header.html')
     .then(data => {
         document.getElementById('headerContent').innerHTML = data;
     });
+fetch('/components/footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footerContent').innerHTML = data;
+    });
 const navbar = document.querySelector(".navbar");
 const menuBtn = document.querySelector("#menu-btn");
 menuBtn.addEventListener("click", function () {
