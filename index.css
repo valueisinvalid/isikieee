@@ -91,7 +91,7 @@ body {
 }
 .header .navbar a {
   font-family: "Overpass Mono";
-  margin: 0 3rem;
+  margin: 0 0rem;
   font-size: 1.6rem;
   color: var(--black-color);
   border-bottom: 0.1rem solid transparent;
