@@ -460,7 +460,6 @@ p {
 /*FAQ Page*/
 .faq-svg {
   position: relative;
-  top: 100px;
   width: auto; /* Adjust the width as needed */
   height: 20vw; /* Maintain aspect ratio */
   max-width: 100%; /* Ensure it doesn't exceed its container */
@@ -495,10 +494,6 @@ p {
   display: block;
 }
 /*FAQ Page*/
-.five-vw-space {
-  height: 5vw;
-  width: 100%;
-}
 /*--------------------------------------------------------------------------------------------*/
 @media (max-width: 991px) {
   html {
