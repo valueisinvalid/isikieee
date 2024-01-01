@@ -351,13 +351,13 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //Header Yönlendirmesi
-fetch('/components/header.html')
+fetch('../components/header.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('headerContent').innerHTML = data;
     });
 //Footer Yönlendirmesi
-fetch('/components/footer.html')
+fetch('../components/footer.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('footerContent').innerHTML = data;
