@@ -350,6 +350,24 @@ document.addEventListener("DOMContentLoaded", function() {
   }, 30);
 });
 
+//FAQ Page
+document.addEventListener("DOMContentLoaded", function() {
+  const accordionItems = document.querySelectorAll('.accordion-item');
+
+  accordionItems.forEach(item => {
+    item.querySelector('.accordion-header').addEventListener('click', function() {
+      const activeContent = item.querySelector('.accordion-content');
+      accordionItems.forEach(item => {
+        const content = item.querySelector('.accordion-content');
+        if (content !== activeContent) {
+          content.classList.remove('active');
+        }
+      });
+      activeContent.classList.toggle('active');
+    });
+  });
+});
+
 //Header Yönlendirmesi
 fetch('/components/header.html')
     .then(response => response.text())

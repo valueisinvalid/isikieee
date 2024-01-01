@@ -419,10 +419,12 @@ iframe {
   width: 82%;
 }
 .footer {
+  position: absolute;
   margin-top: 9rem;
   background-color: #dbdbdb;
   text-align: center;
   padding: 2rem 0;
+  width: 100%;
 }
 .footer .soc {
   padding: 2rem 0;
@@ -455,6 +457,42 @@ p {
   color: #263179;
   font-size: 2rem;
 }
+/*FAQ Page*/
+.faq-svg {
+  position: relative;
+  top: 100px;
+  width: auto; /* Adjust the width as needed */
+  height: 20vw; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure it doesn't exceed its container */
+  display: block; /* Remove extra space beneath image */
+  margin: 0 auto; /* Center the image horizontally */
+}
+.faq-container {
+  position: relative;
+  width: 70vw;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-header {
+  background-color: #f5f5f5;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+}
+
+.accordion-content.active {
+  display: block;
+}
+/*FAQ Page*/
 /*--------------------------------------------------------------------------------------------*/
 @media (max-width: 991px) {
   html {
