@@ -1,3 +1,15 @@
+//Header Yönlendirmesi
+fetch('/components/header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('headerContent').innerHTML = data;
+    });
+//Footer Yönlendirmesi
+fetch('/components/footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footerContent').innerHTML = data;
+    });
 //Kar animasyonu
 Date.now ||
 (Date.now = function () {
@@ -367,20 +379,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
-
-//Header Yönlendirmesi
-fetch('/components/header.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('headerContent').innerHTML = data;
-    });
-//Footer Yönlendirmesi
-fetch('/components/footer.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('footerContent').innerHTML = data;
-    });
-
+//mobil menu button
 const navbar = document.querySelector(".navbar");
 const menuBtn = document.querySelector("#menu-btn");
 menuBtn.addEventListener("click", function () {
@@ -394,3 +393,6 @@ menuBtn.addEventListener("click", function () {
       }
     });
   });
+
+
+

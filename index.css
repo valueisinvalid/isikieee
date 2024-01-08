@@ -7,7 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400&family=Vujahday+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Overpass+Mono:wght@300;400&family=Vujahday+Script&display=swap");
 :root {
-  --main-color: #4282e8a2;
+  --main-color: #838383a2;
   --black-color: #0e0e0e;
   --background: #e7e6e6;
   --border: 0.1rem solid rgba(255, 255, 255, 0.4);
@@ -160,10 +160,10 @@ body {
 }
 .btn:hover {
   opacity: 0.9;
-  background: #3d4cac;
+  background: #03179b;
 
   text-decoration: none;
-  color: #ffffff81;
+  color: #ffffff;
 }
 #menu-btn {
   cursor: pointer;
