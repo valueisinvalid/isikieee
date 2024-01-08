@@ -419,7 +419,7 @@ iframe {
   width: 82%;
 }
 .footer {
-  position: absolute;
+  position: static;
   margin-top: 9rem;
   background-color: #dbdbdb;
   text-align: center;
