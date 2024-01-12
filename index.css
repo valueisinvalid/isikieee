@@ -177,8 +177,8 @@ body {
   width: 40%;
   height: 30%;
   position: relative;
-  margin-left: 115rem;
-  margin-top: -38rem;
+  margin-left: auto;
+  margin-top: -20%;
 }
 .arrow {
   height: 15%;
@@ -212,7 +212,7 @@ body {
 
   width: 90%;
 
-  margin-top: 26vh;
+  margin-top: 5%;
 
   animation: fadeInUp 1s ease-in-out;
   opacity: 0;
