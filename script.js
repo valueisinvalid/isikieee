@@ -380,6 +380,8 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 //mobil menu button
+var tik= 0;
+function mobilactive(){
 const navbar = document.querySelector(".navbar");
 const menuBtn = document.querySelector("#menu-btn");
 menuBtn.addEventListener("click", function () {
@@ -393,6 +395,16 @@ menuBtn.addEventListener("click", function () {
       }
     });
   });
+  if(tik%2==0){
+  setTimeout(function() {
+    // İkinci tıklama
+    menuBtn.click();
+    
+    // İkinci tıklama işlemleri burada gerçekleştirilebilir
+}, 1);
+  }
+  tik = tik + 1;
+}
 
 
 
