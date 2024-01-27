@@ -212,7 +212,7 @@ body {
 
   width: 90%;
 
-  margin-top: 5%;
+  margin-top: 10%;
 
   animation: fadeInUp 1s ease-in-out;
   opacity: 0;
@@ -235,6 +235,9 @@ body {
   display: flex; /*hakkında kısmı için*/
 }
 
+.galeri {
+  display: flex; /*hakkında kısmı için*/
+}
 .content {
   flex: 1;
   flex-wrap: wrap;
@@ -244,6 +247,7 @@ body {
   box-shadow: 0px 0px 7px 0px #c6c6c6;
   padding: 20px;
   margin: 5%;
+  max-height: 85rem;
 
   border-radius: 30px;
 
@@ -254,9 +258,10 @@ body {
   color: #000000;
   font-family: "Overpass Mono", sans-serif;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-top: 20px;
   overflow: hidden;
+  max-width: 60rem;
   /*text-align: center;*/
 }
 
@@ -292,9 +297,10 @@ body {
   float: right;
   /*margin-left: 2%; */
   margin-top: 4rem;
+  margin-top: -2%;
   display: block;
   float: right; /* or float: right; */
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 .heading {
@@ -428,7 +434,6 @@ iframe {
 }
 .footer .soc {
   padding: 2rem 0;
-  
 }
 
 .footer .soc a {
@@ -475,7 +480,6 @@ p {
 
 .accordion-item {
   border-bottom: 3px solid #ccc;
-  
 }
 
 .accordion-header {
@@ -497,7 +501,7 @@ p {
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 15px;
   margin-right: 8%;
   margin-left: 8%;
 }
@@ -525,7 +529,7 @@ p {
   width: 80%;
   max-width: 800px;
   max-height: 80%;
-  margin-top: 10%;     /* *************   */
+  margin-top: 10%; /* *************   */
 }
 
 .close {
@@ -571,7 +575,7 @@ p {
     font-size: 1.2rem;
     color: var(--black-color);
     border-bottom: 0.1rem solid transparent;
-}
+  }
 
   /*ayarla arrowdiv*/
 }
@@ -619,10 +623,9 @@ p {
   .header .logo img {
     height: 6rem;
   }
-  .arrowdiv{
+  .arrowdiv {
     margin-top: -40%;
   }
-
 }
 
 @media (max-width: 576px) {
@@ -653,15 +656,15 @@ p {
     padding: 8% 8% 8% 8%;
     font-size: 10px;
   }
-  .fot{
+  .fot {
     padding: 1.5%;
   }
-  .container{
+  .container {
     flex-direction: column;
   }
   #ana.containerheader,
   #ana.containerheader2,
-  #ana.hakkindayazi{
+  #ana.hakkindayazi {
     margin-top: 5%;
   }
 }
