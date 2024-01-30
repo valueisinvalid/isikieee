@@ -248,6 +248,7 @@ body {
   padding: 20px;
   margin: 5%;
   max-height: 85rem;
+  max-width: max-content;
 
   border-radius: 30px;
 
@@ -412,13 +413,14 @@ body {
 .sss p {
   margin-right: 8%;
   margin-left: 8%;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #1500007e;
   font-family: "Overpass Mono", sans-serif;
   font-weight: 500;
   max-width: auto;
   margin-bottom: 15px;
 }
+
 iframe {
   margin-left: 9%;
   margin-right: 9%;
