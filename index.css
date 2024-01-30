@@ -248,7 +248,7 @@ body {
   padding: 20px;
   margin: 5%;
   max-height: 85rem;
-  max-width: %100;
+
   box-sizing: border-box;
 
   border-radius: 30px;
@@ -263,7 +263,6 @@ body {
   font-size: 1.7rem;
   margin-top: 20px;
   overflow: hidden;
-  max-width: %60;
 }
 
 .containerheader {
