@@ -412,11 +412,11 @@ body {
 .sss p {
   margin-right: 8%;
   margin-left: 8%;
-  font-size: 2rem;
-  color: #2000007e;
+  font-size: 1.5rem;
+  color: #1500007e;
   font-family: "Overpass Mono", sans-serif;
-  font-weight: 300;
-  max-width: 600px;
+  font-weight: 500;
+  max-width: auto;
   margin-bottom: 15px;
 }
 iframe {
