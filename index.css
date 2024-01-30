@@ -71,12 +71,13 @@ body {
 
 .iletisimresim {
   position: absolute;
-  top: 0;
+  top: 8%;
   right: 0;
   width: 50%;
   height: auto;
   z-index: -1;
 }
+
 
 .header {
   background-color: var(--background);
@@ -412,7 +413,7 @@ body {
   /* margin-left: 7%; */
   margin-top: 15%;
   border-bottom: 0.3rem solid #263179;
-  margin: 4% 35% 4% 35%;
+  margin: 10% 35% 4% 35%;
 }
 
 .sss p {
@@ -427,9 +428,10 @@ body {
 }
 
 iframe {
-  margin-left: 9%;
-  margin-right: 9%;
-  width: 82%;
+  margin-left: 7%;
+  margin-right: 7%;
+  width: 86%;
+  height: 40rem;
 }
 .footer {
   position: static;
