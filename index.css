@@ -491,6 +491,7 @@ p {
 }
 
 .accordion-header {
+  font-size: 1.5rem;
   background-color: #f5f5f5;
   padding: 10px;
   height: 3vw;
@@ -498,6 +499,7 @@ p {
 }
 
 .accordion-content {
+  font-size: 1.9rem;
   padding: 10px;
   display: none;
 }
@@ -689,8 +691,8 @@ p {
   }
 }
 
+/* Start https://www.cursors-4u.com */
 * {
-  cursor: url(https://cur.cursors-4u.net/holidays/hol-2/hol164.cur), auto !important;
-}
-
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-1/cur67.cur), auto !important;
+} /* End https://www.cursors-4u.com */
 /*! responsive end  */
