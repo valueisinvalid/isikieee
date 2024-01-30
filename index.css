@@ -248,7 +248,7 @@ body {
   padding: 20px;
   margin: 5%;
   max-height: 85rem;
-  max-width: max-content;
+  max-width: max-content %100;
 
   border-radius: 30px;
 
