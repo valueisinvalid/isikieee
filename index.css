@@ -587,6 +587,9 @@ p {
     color: var(--black-color);
     border-bottom: 0.1rem solid transparent;
   }
+  .heading {
+    margin: 8% 25% 4% 25%;
+}
 
   /*ayarla arrowdiv*/
 }
@@ -637,6 +640,23 @@ p {
   .arrowdiv {
     margin-top: -40%;
   }
+  .gallery {
+  display: block;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  
+}
+
+.gallery img {
+  width: 80%;
+  height: auto;
+  margin-top: 2%;
+}
+    .gal-img{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
 }
 
 @media (max-width: 576px) {
