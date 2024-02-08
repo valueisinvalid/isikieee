@@ -617,7 +617,17 @@ p {
     right: 3rem;
     text-align: center;
   }
+  .h12 {
+    color: #210000;
+    font-family: "Handjet", sans-serif;
+    font-weight: 300;
+    font-size: 5rem;
+    /*text-align: center;*/
+    margin-left: 7%;
 
+    width: 50%;
+    position: absolute;
+  }
   .header .navbar a {
     color: var(--black-color);
     display: block;
