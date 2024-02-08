@@ -494,7 +494,7 @@ p {
   font-size: 1.5rem;
   background-color: #f5f5f5;
   padding: 10px;
-  height: 3vw;
+  max-height: max-content;
   cursor: pointer;
 }
 
@@ -502,6 +502,10 @@ p {
   font-size: 1.9rem;
   padding: 10px;
   display: none;
+  animation: fadeInUp2 0.5s ease-in-out;
+  opacity: 0;
+
+  animation-fill-mode: forwards;
 }
 
 .accordion-content.active {
@@ -588,8 +592,8 @@ p {
     border-bottom: 0.1rem solid transparent;
   }
   .heading {
-    margin: 8% 25% 4% 25%;
-}
+    margin: 15% 25% 4% 25%;
+  }
 
   /*ayarla arrowdiv*/
 }
@@ -641,22 +645,24 @@ p {
     margin-top: -40%;
   }
   .gallery {
-  display: block;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  
-}
+    display: block;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
 
-.gallery img {
-  width: 80%;
-  height: auto;
-  margin-top: 2%;
-}
-    .gal-img{
-      margin-left: 10%;
-      margin-right: 10%;
-    }
+  .heading {
+    margin: 15% 25% 4% 25%;
+  }
 
+  .gallery img {
+    width: 80%;
+    height: auto;
+    margin-top: 2%;
+  }
+  .gal-img {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -669,6 +675,10 @@ p {
   }
   .header .logo img {
     height: 5rem;
+  }
+
+  .heading {
+    margin: 15% 25% 4% 25%;
   }
 }
 @media (max-width: 440px) {
@@ -698,6 +708,10 @@ p {
   #ana.hakkindayazi {
     margin-top: 5%;
   }
+
+  .heading {
+    margin: 15% 25% 4% 25%;
+  }
 }
 @media (max-width: 285px) {
   html {
@@ -708,6 +722,10 @@ p {
   }
   .header .logo img {
     height: 3.5rem;
+  }
+
+  .heading {
+    margin: 15% 25% 4% 25%;
   }
 }
 
