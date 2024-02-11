@@ -449,6 +449,9 @@ iframe {
   width: 86%;
   height: 40rem;
 }
+.maps{
+  margin-top: 5%;
+}
 .footer {
   position: static;
   margin-top: 9rem;
@@ -690,6 +693,9 @@ p {
     margin-left: 10%;
     margin-right: 10%;
   }
+  .resimbolumu{
+    padding-bottom: 10%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -706,6 +712,16 @@ p {
 
   .heading {
     margin: 15% 25% 4% 25%;
+  }
+  .footer {
+    position: sticky;
+    bottom: 0;
+    margin-top: 9rem;
+    background-color: #dbdbdb;
+    text-align: center;
+    padding: 2rem 0;
+    width: 100%;
+    margin-top: 43%;
   }
 }
 @media (max-width: 440px) {
