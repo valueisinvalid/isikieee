@@ -723,6 +723,12 @@ p {
     width: 100%;
     margin-top: 43%;
   }
+  .container {
+    flex-direction: column;
+  }
+  .resimbolumu{
+    margin-bottom: -35%;
+  }
 }
 @media (max-width: 440px) {
   html {
@@ -743,9 +749,7 @@ p {
   .fot {
     padding: 1.5%;
   }
-  .container {
-    flex-direction: column;
-  }
+
   #ana.containerheader,
   #ana.containerheader2,
   #ana.hakkindayazi {
